@@ -12,6 +12,20 @@
 		5F94978C1E65300800829376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F94978A1E65300800829376 /* Main.storyboard */; };
 		5F94978E1E65300800829376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F94978D1E65300800829376 /* Assets.xcassets */; };
 		5F9497911E65300800829376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F94978F1E65300800829376 /* LaunchScreen.storyboard */; };
+		5FD2AD401E6539B8003C5799 /* PhotoGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2AD3F1E6539B8003C5799 /* PhotoGrabber.swift */; };
+		5FD2AD441E653B5D003C5799 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2AD431E653B5D003C5799 /* Bot.swift */; };
+		5FDB1B461E65D121006CA8DB /* Secrets.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FDB1B451E65D121006CA8DB /* Secrets.json */; };
+		5FDB1B481E65D199006CA8DB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B471E65D199006CA8DB /* Secrets.swift */; };
+		5FDB1B4A1E65D3AB006CA8DB /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B491E65D3AB006CA8DB /* Vision.swift */; };
+		5FDB1B4C1E65D5C5006CA8DB /* UIImage+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B4B1E65D5C5006CA8DB /* UIImage+Base64.swift */; };
+		5FDB1B4E1E65ED86006CA8DB /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B4D1E65ED86006CA8DB /* Shuffle.swift */; };
+		5FDB1B521E65EFF2006CA8DB /* Tweeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B511E65EFF2006CA8DB /* Tweeter.swift */; };
+		5FDB1B561E66139A006CA8DB /* NSAttributedString+ResizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B551E66139A006CA8DB /* NSAttributedString+ResizeToFit.m */; };
+		5FDB1B581E6613B7006CA8DB /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B571E6613B7006CA8DB /* UIImage+Resize.swift */; };
+		5FDB1B5A1E6613D1006CA8DB /* PicMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B591E6613D1006CA8DB /* PicMaker.swift */; };
+		5FDB1B5C1E661480006CA8DB /* UIColor+GetHSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB1B5B1E661480006CA8DB /* UIColor+GetHSV.swift */; };
+		5FDB1B5E1E662E86006CA8DB /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5FDB1B5D1E662E86006CA8DB /* test.jpg */; };
+		5FE2A42F1E65336100DF7727 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE2A42E1E65336100DF7727 /* LogManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +36,22 @@
 		5F94978D1E65300800829376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F9497901E65300800829376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9497921E65300800829376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD2AD3F1E6539B8003C5799 /* PhotoGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGrabber.swift; sourceTree = "<group>"; };
+		5FD2AD431E653B5D003C5799 /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
+		5FDB1B451E65D121006CA8DB /* Secrets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Secrets.json; sourceTree = "<group>"; };
+		5FDB1B471E65D199006CA8DB /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		5FDB1B491E65D3AB006CA8DB /* Vision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		5FDB1B4B1E65D5C5006CA8DB /* UIImage+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Base64.swift"; sourceTree = "<group>"; };
+		5FDB1B4D1E65ED86006CA8DB /* Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
+		5FDB1B511E65EFF2006CA8DB /* Tweeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweeter.swift; sourceTree = "<group>"; };
+		5FDB1B531E661399006CA8DB /* cameraroll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cameraroll-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FDB1B541E66139A006CA8DB /* NSAttributedString+ResizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+ResizeToFit.h"; sourceTree = "<group>"; };
+		5FDB1B551E66139A006CA8DB /* NSAttributedString+ResizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+ResizeToFit.m"; sourceTree = "<group>"; };
+		5FDB1B571E6613B7006CA8DB /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		5FDB1B591E6613D1006CA8DB /* PicMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicMaker.swift; sourceTree = "<group>"; };
+		5FDB1B5B1E661480006CA8DB /* UIColor+GetHSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GetHSV.swift"; sourceTree = "<group>"; };
+		5FDB1B5D1E662E86006CA8DB /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		5FE2A42E1E65336100DF7727 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +86,26 @@
 			children = (
 				5F9497861E65300800829376 /* AppDelegate.swift */,
 				5F9497881E65300800829376 /* ViewController.swift */,
+				5FE2A42E1E65336100DF7727 /* LogManager.swift */,
+				5FD2AD3F1E6539B8003C5799 /* PhotoGrabber.swift */,
+				5FD2AD431E653B5D003C5799 /* Bot.swift */,
+				5FDB1B471E65D199006CA8DB /* Secrets.swift */,
+				5FDB1B491E65D3AB006CA8DB /* Vision.swift */,
+				5FDB1B511E65EFF2006CA8DB /* Tweeter.swift */,
+				5FDB1B4D1E65ED86006CA8DB /* Shuffle.swift */,
+				5FDB1B4B1E65D5C5006CA8DB /* UIImage+Base64.swift */,
+				5FDB1B591E6613D1006CA8DB /* PicMaker.swift */,
+				5FDB1B571E6613B7006CA8DB /* UIImage+Resize.swift */,
+				5FDB1B5B1E661480006CA8DB /* UIColor+GetHSV.swift */,
+				5FDB1B541E66139A006CA8DB /* NSAttributedString+ResizeToFit.h */,
+				5FDB1B551E66139A006CA8DB /* NSAttributedString+ResizeToFit.m */,
+				5FDB1B5D1E662E86006CA8DB /* test.jpg */,
+				5FDB1B451E65D121006CA8DB /* Secrets.json */,
 				5F94978A1E65300800829376 /* Main.storyboard */,
 				5F94978D1E65300800829376 /* Assets.xcassets */,
 				5F94978F1E65300800829376 /* LaunchScreen.storyboard */,
 				5F9497921E65300800829376 /* Info.plist */,
+				5FDB1B531E661399006CA8DB /* cameraroll-Bridging-Header.h */,
 			);
 			path = cameraroll;
 			sourceTree = "<group>";
@@ -97,7 +143,13 @@
 					5F9497821E65300800829376 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = VPN8ZW6EAC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9497911E65300800829376 /* LaunchScreen.storyboard in Resources */,
+				5FDB1B5E1E662E86006CA8DB /* test.jpg in Resources */,
+				5FDB1B461E65D121006CA8DB /* Secrets.json in Resources */,
 				5F94978E1E65300800829376 /* Assets.xcassets in Resources */,
 				5F94978C1E65300800829376 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +191,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDB1B4C1E65D5C5006CA8DB /* UIImage+Base64.swift in Sources */,
+				5FD2AD401E6539B8003C5799 /* PhotoGrabber.swift in Sources */,
+				5FDB1B5C1E661480006CA8DB /* UIColor+GetHSV.swift in Sources */,
+				5FDB1B4A1E65D3AB006CA8DB /* Vision.swift in Sources */,
+				5FDB1B481E65D199006CA8DB /* Secrets.swift in Sources */,
+				5FDB1B4E1E65ED86006CA8DB /* Shuffle.swift in Sources */,
+				5FDB1B581E6613B7006CA8DB /* UIImage+Resize.swift in Sources */,
+				5FDB1B561E66139A006CA8DB /* NSAttributedString+ResizeToFit.m in Sources */,
+				5FE2A42F1E65336100DF7727 /* LogManager.swift in Sources */,
+				5FDB1B5A1E6613D1006CA8DB /* PicMaker.swift in Sources */,
 				5F9497891E65300800829376 /* ViewController.swift in Sources */,
 				5F9497871E65300800829376 /* AppDelegate.swift in Sources */,
+				5FDB1B521E65EFF2006CA8DB /* Tweeter.swift in Sources */,
+				5FD2AD441E653B5D003C5799 /* Bot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +327,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VPN8ZW6EAC;
 				INFOPLIST_FILE = cameraroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nateparrott.cameraroll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cameraroll/cameraroll-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +344,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VPN8ZW6EAC;
 				INFOPLIST_FILE = cameraroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nateparrott.cameraroll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cameraroll/cameraroll-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +375,7 @@
 				5F9497971E65300800829376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
