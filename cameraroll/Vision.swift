@@ -44,7 +44,7 @@ class VisionRequest {
                 if let responses = json["responses"] as? [[String: Any]],
                     responses.count > 0 {
                     let response = responses[0]
-                    let color = self.getColorFromResponse(resp: response)
+                    let color = UIColor.green // self.getColorFromResponse(resp: response)
                     let labels = self.getLabelsFromResponse(resp: response)
                     let emotions = self.getEmotionsFromResponse(resp: response)
                     print("Color: \(color)")
@@ -72,21 +72,21 @@ class VisionRequest {
         }
     }
     
-    func getColorFromResponse(resp: [String: Any]) -> UIColor {
-        if let imageProperties = resp["imagePropertiesAnnotation"] as? [String: Any],
-            let dominantColors = imageProperties["dominantColors"] as? [String: Any],
-            let colors = dominantColors["colors"] as? [[String: Any]],
-            colors.count > 0 {
-            let topColorDict = colors[0]["color"] as! [String: Double]
-            let r = CGFloat(topColorDict["red"]!)
-            let g = CGFloat(topColorDict["red"]!)
-            let b = CGFloat(topColorDict["red"]!)
-            
-            return UIColor(red: r/255, green: g/255, blue: b/255, alpha: 1)
-        } else {
-            return UIColor.purple
-        }
-    }
+//    func getColorFromResponse(resp: [String: Any]) -> UIColor {
+//        if let imageProperties = resp["imagePropertiesAnnotation"] as? [String: Any],
+//            let dominantColors = imageProperties["dominantColors"] as? [String: Any],
+//            let colors = dominantColors["colors"] as? [[String: Any]],
+//            colors.count > 0 {
+//            let topColorDict = colors[0]["color"] as! [String: Double]
+//            let r = CGFloat(topColorDict["red"]!)
+//            let g = CGFloat(topColorDict["green"]!)
+//            let b = CGFloat(topColorDict["blue"]!)
+//            
+//            return UIColor(red: r/255, green: g/255, blue: b/255, alpha: 1)
+//        } else {
+//            return UIColor.purple
+//        }
+//    }
     
     func getEmotionsFromResponse(resp: [String: Any]) -> [String] {
         var emotions = [String]()
