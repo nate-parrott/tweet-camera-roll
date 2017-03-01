@@ -56,9 +56,19 @@ class PicMaker {
     }
     
     static func filterImage(image: UIImage) -> UIImage {
+        
         let ciImage = CIImage(image: image)!
-        let brighten = CIFilter(name: "CIColorControls", withInputParameters: ["inputBrightness": 0.4, "inputImage": ciImage])!
-        let pixellate = CIFilter(name: "CIPixellate", withInputParameters: ["inputImage": brighten.outputImage!, "inputScale": 120.0])!
-        return UIImage(ciImage: pixellate.outputImage!)
+        let transform = NSValue(cgAffineTransform: CGAffineTransform.identity)
+        let clamp = CIFilter(name: "CIAffineClamp", withInputParameters: ["inputTransform": transform, "inputImage": ciImage])!
+        clamp.setDefaults()
+        let brighten = CIFilter(name: "CIColorControls", withInputParameters: ["inputBrightness": 0.4, "inputSaturation": 0.3, "inputImage": clamp.outputImage!])!
+        let pixellate = CIFilter(name: "CIPixellate", withInputParameters: ["inputImage": brighten.outputImage!, "inputScale": 30.0])!
+        let ciContext = CIContext()
+        let op = pixellate.outputImage!
+        let extent = ciImage.extent
+        let cgImage = ciContext.createCGImage(op, from: extent, format: kCIFormatRGBA8, colorSpace: nil)!
+        // let cgImage = ciContext.createCGImage(pixellate.outputImage!, fromRect: pixellate.outputImage!.extent)
+        return UIImage(cgImage: cgImage)
+        // return UIImage(ciImage: pixellate.outputImage!)
     }
 }

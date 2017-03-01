@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Bot.Shared.refresh()
-        let filtered = PicMaker.filterImage(image: UIImage(named: "test.jpg")!)
+        let filtered = PicMaker.filterImage(image: UIImage(named: "long.png")!)
         let img = PicMaker.makePic(image: filtered, text: "hello world")
         return true
     }

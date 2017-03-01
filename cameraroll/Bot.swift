@@ -24,6 +24,8 @@ class Bot : NSObject, CLLocationManagerDelegate {
                 print("no twitter access")
             }
         }
+        locationManager.allowsBackgroundLocationUpdates = true 
+        locationManager.startMonitoringSignificantLocationChanges()
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

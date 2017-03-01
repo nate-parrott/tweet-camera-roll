@@ -40,8 +40,8 @@ class ViewController: UITableViewController {
     }
     
     func updateAccountPickerUI() {
-        DispatchQueue.main.async {
-            Tweeter.shared.requestAccess { (success) in
+        Tweeter.shared.requestAccess { (success) in
+            DispatchQueue.main.async {
                 if success {
                     var title = "Select account..."
                     if let selectedAccount = UserDefaults.standard.string(forKey: "SelectedAccount") {
